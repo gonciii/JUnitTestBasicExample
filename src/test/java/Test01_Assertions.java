@@ -1,6 +1,8 @@
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 public class Test01_Assertions {
     // her test metotu öncesi @Test anatasyonu kullanılır.
@@ -12,7 +14,6 @@ public class Test01_Assertions {
     }
 
     @Test
-    // main içerisindeki bir methodun test'i yapıldığını varsayarsak :
     // method bir string ifadesinin uzunluğunu hesaplama methodu olsun.
     void testLength() {
         String str = "Merhaba Dünya";
@@ -44,5 +45,29 @@ public class Test01_Assertions {
     void testContains() {
         assertEquals(false,"Gonca".contains("e"));   // gonca e harfi içermiyor ! beklentim : false test : çalışır !
     }
+
+    @Test
+    void testLowerCase() {
+        String s = "TEST DENEME".toLowerCase();
+        assertEquals("test deneme",s);
+    }
+
+    @Test
+    void testSquareRoot() {
+        double a = Math.sqrt(16);
+        assertEquals(4.0,a);
+    }
+
+    @Test
+    void testPow() {
+        assertEquals(25,Math.pow(5,2));
+    }
+
+    @Test
+    @Disabled // -----------> disabled ile test blocklanır ve es geçilir !
+    void testMax() {
+        assertEquals(10,Math.max(10,50),"Test başarısız !");
+    }
+
 
 }

@@ -3,6 +3,7 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class Test02_Assertions {
+
     @Test
     void testMin() {
         assertEquals(3,Math.min(14,3));
@@ -15,7 +16,7 @@ public class Test02_Assertions {
         String[] expectedArray = {"Junit","Test","with","Java"};
 
         // assertTrue :True ise testten geçer.
-        //assertTrue(Arrays.equals(actualArray,expectedArray));
+        // assertTrue(Arrays.equals(actualArray,expectedArray));
 
         // assertFalse : beklenen false olması lazım testten geçmesi için !
         // assertFalse(Arrays.equals(actualArray,expectedArray));

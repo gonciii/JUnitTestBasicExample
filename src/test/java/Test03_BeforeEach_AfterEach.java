@@ -50,9 +50,11 @@ public class Test03_BeforeEach_AfterEach {
     }
 
     /*
-    beforeEach() çalıştı !
-    testLength(TestInfo) çalıştı !
-    afterEach() çalıştı !
+   @BeforeEach: Bu anotasyon ile işaretlenen metod, her test metodundan önce çalıştırılır.
+   Testlerin her biri için ayrı ayrı çalışır ve genellikle testten önce yapılması gereken hazırlık işlemleri için kullanılır.
+
+   @AfterEach: Bu anotasyon ile işaretlenen metod, her test metodundan sonra çalıştırılır.
+   Testlerin her biri tamamlandıktan sonra çağrılır ve genellikle test sonrası temizleme işlemleri için kullanılır.
      */
 
 
